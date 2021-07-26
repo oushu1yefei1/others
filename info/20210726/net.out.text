@@ -1,0 +1,75 @@
+
+/usr/local/hawq/./bin/gpcheckperf -f all_hosts -r N -d /tmp -D
+
+-------------------
+--  NETPERF TEST
+-------------------
+
+====================
+==  RESULT
+====================
+Netperf bisection bandwidth test
+kdw1 -> kdw2 = 1826.760000
+kdw3 -> kdw4 = 2561.990000
+kdw6 -> kdw1 = 2728.720000
+kdw2 -> kdw1 = 2526.280000
+kdw4 -> kdw3 = 2701.580000
+kdw1 -> kdw6 = 2645.200000
+
+Summary:
+sum = 14990.53 MB/sec
+min = 1826.76 MB/sec
+max = 2728.72 MB/sec
+avg = 2498.42 MB/sec
+median = 2645.20 MB/sec
+
+[Warning] connection between kdw1 and kdw2 is no good
+/usr/local/hawq/./bin/gpcheckperf -f all_hosts -r N -d /tmp -D
+
+-------------------
+--  NETPERF TEST
+-------------------
+
+====================
+==  RESULT
+====================
+Netperf bisection bandwidth test
+kdw1 -> kdw2 = 2778.380000
+kdw3 -> kdw4 = 2715.490000
+kdw6 -> kdw1 = 2562.280000
+kdw2 -> kdw1 = 2586.990000
+kdw4 -> kdw3 = 2802.490000
+kdw1 -> kdw6 = 2598.630000
+
+Summary:
+sum = 16044.26 MB/sec
+min = 2562.28 MB/sec
+max = 2802.49 MB/sec
+avg = 2674.04 MB/sec
+median = 2715.49 MB/sec
+
+/usr/local/hawq/./bin/gpcheckperf -f all_hosts -r N -d /tmp -D
+
+-------------------
+--  NETPERF TEST
+-------------------
+
+====================
+==  RESULT
+====================
+Netperf bisection bandwidth test
+kdw1 -> kdw2 = 2719.010000
+kdw3 -> kdw4 = 2775.680000
+kdw6 -> kdw1 = 2563.570000
+kdw2 -> kdw1 = 2501.200000
+kdw4 -> kdw3 = 2800.910000
+kdw1 -> kdw6 = 2670.460000
+
+Summary:
+sum = 16030.83 MB/sec
+min = 2501.20 MB/sec
+max = 2800.91 MB/sec
+avg = 2671.80 MB/sec
+median = 2719.01 MB/sec
+
+[Warning] connection between kdw2 and kdw1 is no good

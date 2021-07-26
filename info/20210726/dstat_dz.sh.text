@@ -1,0 +1,1 @@
+nohup dstat -c -d -n -t 1 >/tmp/dstat.log &

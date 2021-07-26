@@ -1,0 +1,117 @@
+/usr/local/hawq/./bin/gpcheckperf -f all_hosts -r d -d /data1 -D -S 256GB
+
+--------------------
+--  DISK WRITE TEST
+--------------------
+
+--------------------
+--  DISK READ TEST
+--------------------
+
+====================
+==  RESULT
+====================
+
+ disk write avg time (sec): 236.76
+ disk write tot bytes: 1374389534720
+ disk write tot bandwidth (MB/s): 5552.64
+ disk write min bandwidth (MB/s): 1073.52 [kdw2]
+ disk write max bandwidth (MB/s): 1236.12 [kdw1]
+ -- per host bandwidth --
+    disk write bandwidth (MB/s): 1076.04 [kdw4]
+    disk write bandwidth (MB/s): 1079.05 [kdw6]
+    disk write bandwidth (MB/s): 1236.12 [kdw1]
+    disk write bandwidth (MB/s): 1073.52 [kdw2]
+    disk write bandwidth (MB/s): 1087.92 [kdw3]
+
+
+ disk read avg time (sec): 160.44
+ disk read tot bytes: 1374389534720
+ disk read tot bandwidth (MB/s): 8217.69
+ disk read min bandwidth (MB/s): 1514.58 [kdw3]
+ disk read max bandwidth (MB/s): 1894.51 [kdw2]
+ -- per host bandwidth --
+    disk read bandwidth (MB/s): 1580.89 [kdw4]
+    disk read bandwidth (MB/s): 1632.08 [kdw6]
+    disk read bandwidth (MB/s): 1595.62 [kdw1]
+    disk read bandwidth (MB/s): 1894.51 [kdw2]
+    disk read bandwidth (MB/s): 1514.58 [kdw3]
+
+/usr/local/hawq/./bin/gpcheckperf -f all_hosts -r d -d /data1 -D -S 256GB
+
+--------------------
+--  DISK WRITE TEST
+--------------------
+
+--------------------
+--  DISK READ TEST
+--------------------
+
+====================
+==  RESULT
+====================
+
+ disk write avg time (sec): 219.19
+ disk write tot bytes: 1374389534720
+ disk write tot bandwidth (MB/s): 5985.85
+ disk write min bandwidth (MB/s): 1142.29 [kdw1]
+ disk write max bandwidth (MB/s): 1243.98 [kdw2]
+ -- per host bandwidth --
+    disk write bandwidth (MB/s): 1198.15 [kdw4]
+    disk write bandwidth (MB/s): 1170.70 [kdw6]
+    disk write bandwidth (MB/s): 1142.29 [kdw1]
+    disk write bandwidth (MB/s): 1243.98 [kdw2]
+    disk write bandwidth (MB/s): 1230.72 [kdw3]
+
+
+ disk read avg time (sec): 128.86
+ disk read tot bytes: 1374389534720
+ disk read tot bandwidth (MB/s): 10359.98
+ disk read min bandwidth (MB/s): 1583.28 [kdw3]
+ disk read max bandwidth (MB/s): 2280.70 [kdw1]
+ -- per host bandwidth --
+    disk read bandwidth (MB/s): 2275.36 [kdw4]
+    disk read bandwidth (MB/s): 2063.96 [kdw6]
+    disk read bandwidth (MB/s): 2280.70 [kdw1]
+    disk read bandwidth (MB/s): 2156.68 [kdw2]
+    disk read bandwidth (MB/s): 1583.28 [kdw3]
+
+/usr/local/hawq/./bin/gpcheckperf -f all_hosts -r d -d /data1 -D -S 256GB
+
+--------------------
+--  DISK WRITE TEST
+--------------------
+
+--------------------
+--  DISK READ TEST
+--------------------
+
+====================
+==  RESULT
+====================
+
+ disk write avg time (sec): 201.28
+ disk write tot bytes: 1374389534720
+ disk write tot bandwidth (MB/s): 6514.33
+ disk write min bandwidth (MB/s): 1264.08 [kdw3]
+ disk write max bandwidth (MB/s): 1330.07 [kdw4]
+ -- per host bandwidth --
+    disk write bandwidth (MB/s): 1330.07 [kdw4]
+    disk write bandwidth (MB/s): 1311.84 [kdw6]
+    disk write bandwidth (MB/s): 1285.52 [kdw1]
+    disk write bandwidth (MB/s): 1322.82 [kdw2]
+    disk write bandwidth (MB/s): 1264.08 [kdw3]
+
+
+ disk read avg time (sec): 108.57
+ disk read tot bytes: 1374389534720
+ disk read tot bandwidth (MB/s): 12315.36
+ disk read min bandwidth (MB/s): 2062.02 [kdw3]
+ disk read max bandwidth (MB/s): 2906.25 [kdw4]
+ -- per host bandwidth --
+    disk read bandwidth (MB/s): 2906.25 [kdw4]
+    disk read bandwidth (MB/s): 2828.49 [kdw6]
+    disk read bandwidth (MB/s): 2390.30 [kdw1]
+    disk read bandwidth (MB/s): 2128.31 [kdw2]
+    disk read bandwidth (MB/s): 2062.02 [kdw3]
+

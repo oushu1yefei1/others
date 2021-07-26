@@ -1,1 +1,19 @@
 
+-- 运行时间
+2day 2个VC 运行17min
+
+正常一天5min 
+
+
+
+-- VC调整SQL
+alter VCLUSTER vc_default without (SEGMENTS='kdw4,kdw6');
+create VCLUSTER vc_pam with (SEGMENTS='kdw4,kdw6');
+
+alter  resource queue vc_pam.pg_default with (ACTIVE_STATEMENTS=60,vseg_resource_quota='mem:2gb');
+alter  resource queue vc_pam.pg_default with (memory_limit_cluster=100%,core_limit_cluster=100%);
+
+
+alter  resource queue vc_default.pg_default with (ACTIVE_STATEMENTS=60,vseg_resource_quota='mem:2gb');
+alter  resource queue vc_default.pg_default with (memory_limit_cluster=100%,core_limit_cluster=100%);
+alter user pam_his01  RESOURCE QUEUE vc_pam.pg_default;
